@@ -1,0 +1,52 @@
+# Base class Smartphone
+class Smartphone:
+    def __init__(self, brand, model, price, storage):
+        # Constructor to initialize the object with unique values
+        self.brand = brand
+        self.model = model
+        self.price = price
+        self.storage = storage
+
+    def display_details(self):
+        # Display all details about the smartphone
+        return f"Brand: {self.brand}, Model: {self.model}, Price: ${self.price}, Storage: {self.storage}GB"
+
+    def make_call(self, number):
+        # Simulate making a call
+        return f"Calling {number}... Enjoy your conversation!"
+
+    def install_app(self, app_name):
+        # Simulate installing an app
+        return f"Installing {app_name}... App installed successfully."
+
+# Derived class SmartphoneWithCamera that inherits from Smartphone
+class SmartphoneWithCamera(Smartphone):
+    def __init__(self, brand, model, price, storage, camera_quality):
+        # Call the parent constructor
+        super().__init__(brand, model, price, storage)
+        # Add the camera quality attribute specific to this class
+        self.camera_quality = camera_quality
+
+    def take_photo(self):
+        # Simulate taking a photo
+        return f"Taking a photo with {self.camera_quality} camera... Photo captured successfully!"
+
+    def display_details(self):
+        # Override the display_details method to include camera quality information
+        return f"{super().display_details()}, Camera: {self.camera_quality}MP"
+
+# Creating objects of Smartphone and SmartphoneWithCamera
+smartphone1 = Smartphone("Samsung", "Galaxy S21", 799, 128)
+smartphone2 = SmartphoneWithCamera("Apple", "iPhone 13 Pro", 999, 256, 12)
+
+# Display details of the smartphones
+print(smartphone1.display_details())  # Display details of the basic smartphone
+print(smartphone2.display_details())  # Display details of the smartphone with camera
+
+# Call methods
+print(smartphone1.make_call("555-1234"))
+print(smartphone2.take_photo())
+
+# Install apps
+print(smartphone1.install_app("WhatsApp"))
+print(smartphone2.install_app("Instagram"))
