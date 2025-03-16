@@ -1,32 +1,43 @@
-Version control fundamentals & GitHub popularity:
-Version control tracks changes to code, enabling collaboration and history tracking. GitHub is popular for its distributed nature, easy collaboration features, and cloud storage, allowing version tracking, code sharing, and managing branches in a centralized place. Version control ensures project integrity by maintaining a complete history of changes, reducing the risk of data loss, and enabling easy rollback.
+Timely delivery in software project management:
+Timely delivery ensures customer satisfaction and avoids project delays. Project managers can ensure deadlines are met through proper planning, resource allocation, and monitoring progress.
 
-Setting up a new GitHub repository:
-Steps: Create a GitHub account → Click "New Repository" → Choose a name, description, and visibility (public/private) → Initialize with a README, license, and gitignore → Create repository. Key decisions include setting visibility (public vs. private), choosing a license, and whether to initialize with a README.
+Effective cost control in software projects:
+Cost control ensures the project stays within budget and remains profitable. Strategies include regular budget reviews, cost estimation, and using tools to track expenses.
 
-Importance of the README file:
-A README explains the project’s purpose, installation instructions, usage, and contribution guidelines. It enhances collaboration by providing essential info, helping new contributors understand the project quickly, and promoting consistent practices.
+Agile vs. Waterfall methodologies:
+Agile: Flexible, iterative, and customer-focused. Advantages: Adaptability and frequent feedback. Disadvantages: Can be hard to manage scope.
+Waterfall: Linear and structured. Advantages: Clear milestones and documentation. Disadvantages: Inflexibility and late feedback.
 
-Public vs. Private repository:
-A public repository is visible to everyone, ideal for open-source collaboration. Private repositories are restricted to invited collaborators, useful for sensitive projects. Public repositories promote community engagement, while private repositories provide privacy and control.
+When to use Agile vs. Waterfall:
+Agile: Ideal for dynamic projects with changing requirements (e.g., mobile apps).
+Waterfall: Better for projects with fixed requirements and clear deliverables (e.g., infrastructure projects).
 
-Making the first commit:
-A commit is a snapshot of changes made to the project. Steps: Make changes → Stage changes (git add) → Commit (git commit -m "message") → Push to GitHub. Commits track changes, enabling collaboration and version history, making it easy to revert or review past work.
+Methods for ensuring quality assurance:
+QA methods include automated testing, peer reviews, and continuous integration. High standards ensure the software is reliable and meets user expectations.
 
-Branching in Git:
-Branching allows parallel development without affecting the main project. Create a branch (git branch branch-name), switch to it (git checkout branch-name), make changes, and merge back (git merge branch-name). It’s crucial for collaboration, enabling contributors to work independently and merge code later.
+Defining project scope in planning:
+Defining scope ensures the project stays focused and avoids scope creep. A Work Breakdown Structure (WBS) breaks down tasks for easier management and clarity.
 
-Pull requests in GitHub:
-Pull requests (PRs) enable code review and discussion before merging changes. Steps: Fork or branch → Make changes → Create a pull request → Review and discuss → Merge if approved. PRs help ensure code quality and collaborative feedback.
+Benefits of a detailed project schedule and Gantt charts:
+A detailed schedule helps manage time and resources efficiently. Gantt charts provide a visual representation of project timelines, tasks, and dependencies.
 
-Forking a repository on GitHub:
-Forking creates a personal copy of someone else’s repository to freely experiment. It differs from cloning, which copies the repository to your local machine. Forking is useful when contributing to open-source projects, as it allows changes without affecting the original project until they are merged.
+Core issues your software aims to address:
+The core issues address problems that affect users, such as inefficiency or complexity. These problems are significant because they directly impact the target audience's productivity or experience.
 
-Issues and project boards on GitHub:
-Issues track bugs, enhancements, and tasks, while project boards organize tasks into columns (e.g., To-Do, In Progress, Done). These tools improve organization and collaboration by providing visibility into progress and streamlining task management.
+Defining the problem for effective software development:
+A clear problem definition helps focus development efforts, ensuring the software solution meets specific user needs and solves the right issues.
 
-Challenges & best practices in GitHub:
-Common challenges include merge conflicts, improper commit messages, and lack of consistency in workflow. Best practices include writing clear commit messages, regularly pulling changes, using branching effectively, and ensuring good communication through pull requests and issues to avoid conflicts and streamline collaboration.
+Describing your software solution:
+The software streamlines tasks and improves user efficiency by automating processes and enhancing usability, providing tangible benefits without technical jargon.
+
+Main features that make your software stand out:
+Key features might include unique algorithms, ease of use, or integrations with other tools that differentiate your software from competitors.
+
+Market size and growth potential data:
+Market research data (e.g., reports or surveys) indicates the size, demand, and future growth opportunities, helping you assess software viability.
+
+Understanding market trends for software positioning:
+Market trends inform the software’s development direction and positioning, ensuring it meets current needs and stays competitive in a growing market.
 
 
 
