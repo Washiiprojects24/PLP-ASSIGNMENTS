@@ -1,0 +1,64 @@
+# --- Superhero Base Class ---
+class Superhero:
+    def __init__(self, name, power, origin):
+        self.name = name
+        self.power = power
+        self.origin = origin
+
+    def display_info(self):
+        print(f"🦸 Name: {self.name}")
+        print(f"💥 Power: {self.power}")
+        print(f"🌍 Origin: {self.origin}")
+
+    def use_power(self):
+        print(f"{self.name} uses {self.power}!")
+
+# --- Speedster Subclass (Inheritance + Polymorphism) ---
+class Speedster(Superhero):
+    def __init__(self, name, origin, top_speed):
+        super().__init__(name, "Super Speed", origin)
+        self.top_speed = top_speed
+
+    def use_power(self):
+        print(f"{self.name} zooms at {self.top_speed} mph, leaving a lightning trail! ⚡")
+
+# --- Vehicle Base Class ---
+class Vehicle:
+    def move(self):
+        print("The vehicle moves.")
+
+# --- Vehicle Subclasses (Polymorphism) ---
+class Car(Vehicle):
+    def move(self):
+        print("Driving 🚗")
+
+class Plane(Vehicle):
+    def move(self):
+        print("Flying ✈️")
+
+class Boat(Vehicle):
+    def move(self):
+        print("Sailing 🚢")
+
+# --- Polymorphism Function ---
+def travel(vehicle):
+    vehicle.move()
+
+# --- Main Program ---
+# Create and interact with Superhero and Speedster objects
+hero1 = Superhero("Solaris", "Solar Blast", "Sun Kingdom")
+hero2 = Speedster("Velocity", "Earth-9", 1000)
+
+print("\nSuperhero Info:")
+hero1.display_info()
+hero1.use_power()
+
+print("\nSpeedster Info:")
+hero2.display_info()
+hero2.use_power()
+
+# --- Vehicles in Action ---
+print("\n=== Vehicles in Action ===")
+vehicles = [Car(), Plane(), Boat()]
+for v in vehicles:
+    travel(v)
