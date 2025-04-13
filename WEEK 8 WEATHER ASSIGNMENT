@@ -1,0 +1,71 @@
+# --- Smartphone Base Class ---
+class Smartphone:
+    def __init__(self, brand, model, storage, battery_life):
+        self.brand = brand
+        self.model = model
+        self.storage = storage
+        self.battery_life = battery_life
+
+    def display_info(self):
+        print(f"📱 Brand: {self.brand}")
+        print(f"📱 Model: {self.model}")
+        print(f"💾 Storage: {self.storage}GB")
+        print(f"🔋 Battery Life: {self.battery_life} hours")
+
+    def make_call(self, number):
+        print(f"Calling {number}...")
+
+# --- FoldablePhone Subclass (Inheritance + Polymorphism) ---
+class FoldablePhone(Smartphone):
+    def __init__(self, brand, model, storage, battery_life, foldable):
+        super().__init__(brand, model, storage, battery_life)
+        self.foldable = foldable
+
+    def display_info(self):
+        super().display_info()
+        print(f"📱 Foldable: {self.foldable}")
+
+    # Polymorphism: Overriding the method
+    def make_call(self, number):
+        print(f"Making a stylish call to {number} with the foldable {self.model}.")
+
+# --- Vehicle Base Class ---
+class Vehicle:
+    def move(self):
+        print("The vehicle moves.")
+
+# --- Vehicle Subclasses (Polymorphism) ---
+class Car(Vehicle):
+    def move(self):
+        print("Driving 🚗")
+
+class Plane(Vehicle):
+    def move(self):
+        print("Flying ✈️")
+
+class Boat(Vehicle):
+    def move(self):
+        print("Sailing 🚢")
+
+# --- Polymorphism Function for Vehicles ---
+def travel(vehicle):
+    vehicle.move()
+
+# --- Main Program ---
+# Create Smartphone and FoldablePhone objects
+phone1 = Smartphone("Apple", "iPhone 13", 128, 20)
+phone2 = FoldablePhone("Samsung", "Galaxy Z Flip", 256, 24, True)
+
+print("\nSmartphone Info:")
+phone1.display_info()
+phone1.make_call("123-456-7890")
+
+print("\nFoldablePhone Info:")
+phone2.display_info()
+phone2.make_call("987-654-3210")
+
+# --- Vehicles in Action ---
+print("\n=== Vehicles in Action ===")
+vehicles = [Car(), Plane(), Boat()]
+for v in vehicles:
+    travel(v)
